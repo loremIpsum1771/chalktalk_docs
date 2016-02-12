@@ -48,8 +48,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Chalktalk VR'
-copyright = u'2016, Ken Perlin'
-author = u'Ken Perlin'
+copyright = u'2016, NYU Media Research Lab'
+author = u'NYU Media Research Lab'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -224,7 +224,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'ChalktalkVR.tex', u'Chalktalk VR Documentation',
-     u'Ken Perlin', 'manual'),
+     u'NYU Media Research Lab', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
