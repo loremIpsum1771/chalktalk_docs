@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Sketch.js Class Description &mdash; Chalktalk VR 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Chalktalk VR 0.0.1 documentation" href="index.html" />
+    <link rel="up" title="Developers Guide" href="developers.html" />
+    <link rel="next" title="Installation Guide" href="installation.html" />
+    <link rel="prev" title="API’s from utility.js" href="utility.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="sketch-js-class-description">
+<h1>Sketch.js Class Description<a class="headerlink" href="#sketch-js-class-description" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="api-overview">
+<h2>API Overview<a class="headerlink" href="#api-overview" title="Permalink to this headline">¶</a></h2>
+<p><em>Prototypes</em></p>
+<p><a class="reference internal" href="#sketch">Sketch</a></p>
+<p><a class="reference internal" href="#sketch2d">Sketch2D</a></p>
+<p><a class="reference internal" href="#picture">Picture</a></p>
+<p><a class="reference internal" href="#freehandsketch">FreehandSketch</a></p>
+<div class="section" id="sketch">
+<h3>Sketch<a class="headerlink" href="#sketch" title="Permalink to this headline">¶</a></h3>
+<p>The sketch class is an object, with functions:</p>
+<ul class="simple">
+<li>xyzs()</li>
+<li>adjustD()</li>
+<li>adjustX()</li>
+<li>adjustY()</li>
+<li>adjustXY()</li>
+<li>arrowBegin()</li>
+<li>arrowDrag()</li>
+<li>arrowEnd()</li>
+<li>arrowFade()</li>
+<li>arrowRemove()</li>
+<li>fade()</li>
+<li>fadeAlpha()</li>
+<li>upload()</li>
+<li>computeStrokesBounds()</li>
+<li>drawStretchValues()</li>
+<li>valueToPixels()</li>
+<li>pixelsToValue()</li>
+<li>is3DSketch()</li>
+<li>isGlyph()</li>
+<li>isOnScreen()</li>
+<li>model()</li>
+<li>modelBeginFrame()</li>
+<li>modelEndFrame()</li>
+<li>setColorId()</li>
+<li>setRenderMatrix()</li>
+<li>toFreehandSketch()</li>
+<li>transformX2D()</li>
+<li>transformY2D()</li>
+<li>untransformX2D()</li>
+<li>untransformY2D()</li>
+<li>duringSketch()</li>
+<li>afterSketch()</li>
+<li>computeCursorPoint()</li>
+<li>doSwipe()</li>
+<li>extendBounds()</li>
+<li>clearPorts()</li>
+<li>addPort()</li>
+<li>setPortLocation()</li>
+<li>clone()</li>
+<li>computePixelSize()</li>
+<li>contains()</li>
+<li>cx()</li>
+<li>cy()</li>
+<li>delete()</li>
+<li>deleteChar()</li>
+<li>drawBounds()</li>
+<li>drawLabel()</li>
+<li>drawValue()</li>
+<li>drawText()</li>
+<li>evalCode()</li>
+<li>findInLink()</li>
+<li>getAlpha()</li>
+<li>getDefaultFloat()</li>
+<li>getDefaultValue()</li>
+<li>getInFloat()</li>
+<li>getInIndex()</li>
+<li>getInValue()</li>
+<li>getInValueOf()</li>
+<li>getPortIndex()</li>
+<li>getLabel()</li>
+<li>hasBounds()</li>
+<li>hasPortBounds</li>
+<li>insertText()</li>
+<li>intersectingSketches()</li>
+<li>intersects()</li>
+<li>isAfterSketch()</li>
+<li>isDefaultValue()</li>
+<li>isInValue()</li>
+<li>isInValueAt()</li>
+<li>isNullText()</li>
+<li>isParsed()</li>
+<li>isSimple()</li>
+<li>m2s()</li>
+<li>m2x()</li>
+<li>m2y()</li>
+<li>mScale()</li>
+<li>moveCursor()</li>
+<li>moveLine()</li>
+<li>offsetSelection()</li>
+<li>portXY()</li>
+<li>lastStrokeSize()</li>
+<li>indexOfLastStroke()</li>
+<li>pixelToPoint()</li>
+<li>pointToPixel()</li>
+<li>removeLastStroke()</li>
+<li>renderWrapper()</li>
+<li>scale()</li>
+<li>outPortIndex()</li>
+<li>recenter3DSketch()</li>
+<li>setOutPortValue()</li>
+<li>setOutValue()</li>
+<li>setSelection()</li>
+<li>selectionWeight()</li>
+<li>setDefaultValue()</li>
+<li>setSketchText()</li>
+<li>setTextCursor()</li>
+<li>sketchTextsMouseDown()</li>
+<li>sketchTextsMouseDrag()</li>
+<li>sketchTextsMouseUp()</li>
+<li>onRotate()</li>
+<li>updateSelectionWeights()</li>
+<li>setText()</li>
+<li>setUniform()</li>
+<li>standardView()</li>
+<li>standardViewInverse()</li>
+<li>toPixel()</li>
+<li>toTrace()</li>
+<li>translate()</li>
+<li>tx()</li>
+<li>ty()</li>
+<li>useInputColors()</li>
+<li>xform()</li>
+<li>xformInverse()</li>
+<li>makeXform()</li>
+<li>enableFragmentShaderEditing()</li>
+<li>_updateMesh()</li>
+<li>renderStrokeInit()</li>
+<li>renderStrokeSetColor()</li>
+<li>renderStroke()</li>
+<li>drawTransform()</li>
+<li>morphToGlyphSketch()</li>
+</ul>
+</div>
+<div class="section" id="sketch2d">
+<h3>Sketch2D<a class="headerlink" href="#sketch2d" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>sketch2D()</li>
+</ul>
+</div>
+<div class="section" id="picture">
+<h3>Picture<a class="headerlink" href="#picture" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="freehandsketch">
+<h3>FreehandSketch<a class="headerlink" href="#freehandsketch" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Sketch.js Class Description</a><ul>
+<li><a class="reference internal" href="#api-overview">API Overview</a><ul>
+<li><a class="reference internal" href="#sketch">Sketch</a></li>
+<li><a class="reference internal" href="#sketch2d">Sketch2D</a></li>
+<li><a class="reference internal" href="#picture">Picture</a></li>
+<li><a class="reference internal" href="#freehandsketch">FreehandSketch</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="developers.html">Developers Guide</a><ul>
+      <li>Previous: <a href="utility.html" title="previous chapter">API&#8217;s from utility.js</a></li>
+      <li>Next: <a href="installation.html" title="next chapter">Installation Guide</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/sketch.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, NYU Media Research Lab.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="_sources/sketch.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
