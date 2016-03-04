@@ -52,29 +52,33 @@
 <h3>Sketch<a class="headerlink" href="#sketch" title="Permalink to this headline">¶</a></h3>
 <p>The sketch class is an object, with functions:</p>
 <ul class="simple">
-<li>xyzs()</li>
-<li>adjustD()</li>
-<li>adjustX()</li>
+<li>xyzs() //what does S mean? does it return the Z paramater or 1?</li>
+<li>adjustD() //adjust depth? returns depth or z times depth</li>
+<li>adjustX() //returns either x or z times x + x ===== X is the dimension of what? the clipspace?</li>
 <li>adjustY()</li>
-<li>adjustXY()</li>
-<li>arrowBegin()</li>
-<li>arrowDrag()</li>
-<li>arrowEnd()</li>
-<li>arrowFade()</li>
+<li>adjustXY() //why does it just return [x, y]?</li>
+<li>unadjustD() //what does it mean? multiplying d by the inverse?</li>
+<li>unadjustX()</li>
+<li>unadjustY()</li>
+<li>unadjustXY()</li>
+<li>arrowBegin() //pushes x y coordinates onto the arrow stack and a null z position</li>
+<li>arrowDrag() //what are we doing to the last point of the arrows array?</li>
+<li>arrowEnd() //WHAT IS THE DIFFERENCE BETWEEN SKETCHPAGE AND SKETCHBOOK? and why is the second column of arrows a sketch?</li>
+<li>arrowFade() //what is an arrow?</li>
 <li>arrowRemove()</li>
-<li>fade()</li>
-<li>fadeAlpha()</li>
-<li>upload()</li>
-<li>computeStrokesBounds()</li>
-<li>drawStretchValues()</li>
-<li>valueToPixels()</li>
-<li>pixelsToValue()</li>
-<li>is3DSketch()</li>
-<li>isGlyph()</li>
-<li>isOnScreen()</li>
-<li>model()</li>
-<li>modelBeginFrame()</li>
-<li>modelEndFrame()</li>
+<li>fade() //start fading</li>
+<li>fadeAlpha() //returns the value of the current fade</li>
+<li>upload() //uploads a file to the server</li>
+<li>computeStrokesBounds() //populates _S with the curve bounds of each sketchTrace, whatever all these things are</li>
+<li>drawStretchValues() //getting the scaling (stretching) and then drawing that value to the screen, either in &#8216;value&#8217; (-1, 1) or in pixels
+* valueToPixels()
+* pixelsToValue()</li>
+<li>is3DSketch() //returns whether it is a 3D sketch or not</li>
+<li>isGlyph() //so if there is no _S, then returns true? it wants to make sure that this._S is not null, but strictly undefined</li>
+<li>isOnScreen() //checking if it is within the clipspace</li>
+<li>model() //if the model doesnt exist, it creates a new model, sets the sketch to it //is the model a scene? //you load the model</li>
+<li>modelBeginFrame() //magic number on line 266 //set up all the model parameters</li>
+<li>modelEndFrame() //actually draw the model</li>
 <li>setColorId()</li>
 <li>setRenderMatrix()</li>
 <li>toFreehandSketch()</li>

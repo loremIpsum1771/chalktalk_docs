@@ -23,29 +23,33 @@ Sketch
 
 The sketch class is an object, with functions:
 
-* xyzs()
-* adjustD()
-* adjustX()
+* xyzs() //what does S mean? does it return the Z paramater or 1?
+* adjustD() //adjust depth? returns depth or z times depth
+* adjustX() //returns either x or z times x + x ===== X is the dimension of what? the clipspace?
 * adjustY()
-* adjustXY()
-* arrowBegin()
-* arrowDrag()
-* arrowEnd()
-* arrowFade()
+* adjustXY() //why does it just return [x, y]?
+* unadjustD() //what does it mean? multiplying d by the inverse?
+* unadjustX()
+* unadjustY()
+* unadjustXY()
+* arrowBegin() //pushes x y coordinates onto the arrow stack and a null z position
+* arrowDrag() //what are we doing to the last point of the arrows array?
+* arrowEnd() //WHAT IS THE DIFFERENCE BETWEEN SKETCHPAGE AND SKETCHBOOK? and why is the second column of arrows a sketch?
+* arrowFade() //what is an arrow?
 * arrowRemove()
-* fade()
-* fadeAlpha()
-* upload()
-* computeStrokesBounds()
-* drawStretchValues()
-* valueToPixels()
-* pixelsToValue()
-* is3DSketch()
-* isGlyph()
-* isOnScreen()
-* model()
-* modelBeginFrame()
-* modelEndFrame()
+* fade() //start fading
+* fadeAlpha() //returns the value of the current fade
+* upload() //uploads a file to the server
+* computeStrokesBounds() //populates _S with the curve bounds of each sketchTrace, whatever all these things are
+* drawStretchValues() //getting the scaling (stretching) and then drawing that value to the screen, either in 'value' (-1, 1) or in pixels
+  * valueToPixels()
+  * pixelsToValue()
+* is3DSketch() //returns whether it is a 3D sketch or not
+* isGlyph() //so if there is no _S, then returns true? it wants to make sure that this._S is not null, but strictly undefined
+* isOnScreen() //checking if it is within the clipspace
+* model() //if the model doesnt exist, it creates a new model, sets the sketch to it //is the model a scene? //you load the model
+* modelBeginFrame() //magic number on line 266 //set up all the model parameters
+* modelEndFrame() //actually draw the model
 * setColorId()
 * setRenderMatrix()
 * toFreehandSketch()
