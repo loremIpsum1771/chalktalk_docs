@@ -10,11 +10,11 @@ API Overview
 
 Sketch_
 
-Sketch2D_
+Sketch2D_ //to be obsolete
 
-Picture_
+Picture_ //probably will go away
 
-FreehandSketch_
+FreehandSketch_ //is inside of Sketch
 
 
 ******
@@ -34,7 +34,7 @@ The sketch class is an object, with functions:
 * unadjustXY()
 * arrowBegin() //pushes x y coordinates onto the arrow stack and a null z position
 * arrowDrag() //what are we doing to the last point of the arrows array?
-* arrowEnd() //What is the difference between sketchpage and sketchbook? and why is the second column of arrows a sketch?
+* arrowEnd() //What is the difference between sketchpage and sketchbook (sketchbook is the collection of sketchpages)? and why is the second column of arrows a sketch?
 * arrowFade() //what is an arrow?
 * arrowRemove()
 * fade() //start fading
