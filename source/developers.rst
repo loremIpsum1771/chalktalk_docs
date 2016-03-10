@@ -14,3 +14,4 @@ Chalktalk is comprised of a number of Javascript libraries that serve various fu
    ctmodeler
    utility
    sketch
+   g

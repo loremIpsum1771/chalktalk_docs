@@ -25,7 +25,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Chalktalk VR 0.0.1 documentation" href="index.html" />
     <link rel="up" title="Developers Guide" href="developers.html" />
-    <link rel="next" title="Installation Guide" href="installation.html" />
+    <link rel="next" title="Sketch.js Class Description" href="g.html" />
     <link rel="prev" title="API’s from utility.js" href="utility.html" />
    
   
@@ -45,9 +45,9 @@
 <h2>API Overview<a class="headerlink" href="#api-overview" title="Permalink to this headline">¶</a></h2>
 <p><em>Prototypes</em></p>
 <p><a class="reference internal" href="#sketch">Sketch</a></p>
-<p><a class="reference internal" href="#sketch2d">Sketch2D</a></p>
-<p><a class="reference internal" href="#picture">Picture</a></p>
-<p><a class="reference internal" href="#freehandsketch">FreehandSketch</a></p>
+<p><a class="reference internal" href="#sketch2d">Sketch2D</a> //to be obsolete</p>
+<p><a class="reference internal" href="#picture">Picture</a> //probably will go away</p>
+<p><a class="reference internal" href="#freehandsketch">FreehandSketch</a> //is inside of Sketch</p>
 <div class="section" id="sketch">
 <h3>Sketch<a class="headerlink" href="#sketch" title="Permalink to this headline">¶</a></h3>
 <p>The sketch class is an object, with functions:</p>
@@ -63,7 +63,7 @@
 <li>unadjustXY()</li>
 <li>arrowBegin() //pushes x y coordinates onto the arrow stack and a null z position</li>
 <li>arrowDrag() //what are we doing to the last point of the arrows array?</li>
-<li>arrowEnd() //What is the difference between sketchpage and sketchbook? and why is the second column of arrows a sketch?</li>
+<li>arrowEnd() //What is the difference between sketchpage and sketchbook (sketchbook is the collection of sketchpages)? and why is the second column of arrows a sketch?</li>
 <li>arrowFade() //what is an arrow?</li>
 <li>arrowRemove()</li>
 <li>fade() //start fading</li>
@@ -219,7 +219,7 @@
   <li><a href="index.html">Documentation overview</a><ul>
   <li><a href="developers.html">Developers Guide</a><ul>
       <li>Previous: <a href="utility.html" title="previous chapter">API&#8217;s from utility.js</a></li>
-      <li>Next: <a href="installation.html" title="next chapter">Installation Guide</a></li>
+      <li>Next: <a href="g.html" title="next chapter">Sketch.js Class Description</a></li>
   </ul></li>
   </ul></li>
 </ul>

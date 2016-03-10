@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>g.js Class Description &mdash; Chalktalk VR 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Chalktalk VR 0.0.1 documentation" href="index.html" />
+    <link rel="up" title="Developers Guide" href="developers.html" />
+    <link rel="next" title="Installation Guide" href="installation.html" />
+    <link rel="prev" title="Sketch.js Class Description" href="sketch.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="g-js-class-description">
+<h1>g.js Class Description<a class="headerlink" href="#g-js-class-description" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="api-overview">
+<h2>API Overview<a class="headerlink" href="#api-overview" title="Permalink to this headline">¶</a></h2>
+<p>Global Namespace for Graphics Context</p>
+<div class="section" id="g-global-namespace">
+<h3>G - Global Namespace<a class="headerlink" href="#g-global-namespace" title="Permalink to this headline">¶</a></h3>
+<p>g.js offers helper functions:</p>
+<ul class="simple">
+<li>FakeContext() is a class used when we don&#8217;t want to render a frame</li>
+<li>S(i) //???</li>
+<li>stretch(name, value)</li>
+</ul>
+</div>
+<div class="section" id="global-variables">
+<h3>global variables<a class="headerlink" href="#global-variables" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>arrowNearCursor</li>
+<li>backgroundColor</li>
+<li>bgClickCount</li>
+<li>bgClickX</li>
+<li>bgClickY</li>
+<li>viewForwardMat</li>
+<li>viewInverseMat</li>
+<li>defaultFont</li>
+<li>defaultPenColor</li>
+<li>glyphTrace</li>
+<li>preglyphSketch</li>
+<li>isAltKeyCopySketchEnabled</li>
+<li>isAltPressed</li>
+<li>isCasualFont</li>
+<li>isCatchingRenderExceptions</li>
+<li>isDrawingSketch</li>
+<li>isFinishedLoadingSketches</li>
+<li>isFog</li>
+<li>isMouseOverBackground</li>
+<li>isOverviewMode</li>
+<li>isScreenView</li>
+<li>isShowingToolTips</li>
+<li>isShowingPresenterView</li>
+<li>isTelegraphKeyPressed</li>
+<li>isTextMode</li>
+<li>isTouchDevice</li>
+<li>isTutorialMode</li>
+<li>margin</li>
+<li>meshOpacityOverVideo</li>
+<li>overview_alpha</li>
+<li>sketchPadding</li>
+<li>sketchTypeLabels</li>
+<li>sketchTypes</li>
+<li>sketchTypesToAdd</li>
+<li>videoBrightness</li>
+<li>xmlWriteEnabled</li>
+<li>sketchActionEnd()</li>
+</ul>
+<p>FUNCTIONS</p>
+<ul class="simple">
+<li>moveWand()</li>
+<li>width()</li>
+<li>height()</li>
+<li>clickSize()</li>
+<li>sfs()</li>
+<li>sfpx()</li>
+<li>scrimColor()</li>
+<li>fadedColor()</li>
+<li>fadedRGB()</li>
+<li>overlayScrimColor()</li>
+<li>overlayFadedColor()</li>
+<li>bgScrimColor()</li>
+<li>panX()</li>
+<li>panY()</li>
+<li>initEventHandlers()
+* touchResponse()
+* enableTouchEvent()</li>
+<li>lineWidth()</li>
+<li>_g_beginPath()</li>
+<li>_g_fill()</li>
+<li>_g_lineTo()</li>
+<li>_g_moveTo()</li>
+<li>_g_stroke()</li>
+<li>_g_text()</li>
+<li>_g_sketchTo()</li>
+<li>resampleTrace()</li>
+<li>buildTrace()</li>
+<li>isVideoLayer()</li>
+<li>meshOpacity()</li>
+<li>addSketchType()</li>
+<li>loadSketches()</li>
+<li>addTypeNameToSketchCode()</li>
+<li>importSketch()</li>
+<li>onRemoteSketchesFinishedLoading()</li>
+<li>gStart()</li>
+<li>e2s()</li>
+<li>This()</li>
+<li>startCanvas()</li>
+<li>addSketchOfType()</li>
+<li>sketchTypeToCode()</li>
+<li>registerSketch()</li>
+<li>sg()</li>
+<li>computeLinkCurvature()</li>
+<li>drawPortData()</li>
+<li>drawPossibleLink()</li>
+<li>findOutSketchAndPort()</li>
+<li>findNearestOutPort()</li>
+<li>findNearestInPort()</li>
+<li>findNearestPortAtCursor()</li>
+<li>findOutPortAtCursor()</li>
+<li>isFreehandSketch()</li>
+<li>finishDrawingUnfinishedSketch()</li>
+<li>finishSketch()</li>
+<li>isFinishedDrawing()</li>
+<li>isFinishedDrawing()</li>
+<li>isMouseNearCurve()</li>
+<li>setTextMode()</li>
+<li>toggleTextMode()</li>
+<li>findGlyph()</li>
+<li>strokesComputeBounds()</li>
+<li>strokesNormalize()</li>
+<li>unregisterGlyph()</li>
+<li>registerGlyph()</li>
+<li>shift()</li>
+<li>glyphIndex()</li>
+<li>addGlyph()</li>
+<li>bgActionDown()</li>
+<li>bgActionDrag()</li>
+<li>bgActionUp()</li>
+<li>bgDragGesture()</li>
+<li>bgUpGesture()</li>
+<li>bgClickGesture()</li>
+<li>bgDragGestures = []</li>
+<li>startSketchDragAction()</li>
+<li>doSketchDragAction()</li>
+<li>endSketchDragAction()</li>
+<li>assignCollection()</li>
+<li>unassignCollection()</li>
+<li>addCollectionGlyph()</li>
+<li>sketchClickActionName()</li>
+<li>doSketchClickAction()</li>
+<li>isHover()</li>
+<li>isk()</li>
+<li>nsk()</li>
+<li>sk</li>
+<li>dsk()</li>
+<li>clear()</li>
+<li>image()</li>
+<li>annotateStart()</li>
+<li>annotateEnd()</li>
+<li>ttTick()</li>
+<li>tryToSelectSketchAtCursor()</li>
+<li>createArrowCurve()</li>
+<li>ttUpdate()</li>
+<li>tick()</li>
+<li>isSketchInProgress()</li>
+<li>isShowingOverlay()</li>
+<li>fillPath()</li>
+<li>fadeArrowsIntoSketch()</li>
+<li>deleteSketch()</li>
+<li>selectSketch()</li>
+<li>copySketch()</li>
+<li>addSketch()</li>
+<li>computeCentroid()</li>
+<li>drawCrosshair()</li>
+<li>GeometrySketch()</li>
+<li>addPlaneShaderSketch()</li>
+<li>addSphereShaderSketch()</li>
+<li>addTorusShaderSketch()</li>
+<li>createMesh()</li>
+<li>addGeometryShaderSketch()</li>
+<li>computePreglyphSketchBounds()</li>
+<li>geometrySketch()</li>
+<li>SketchTo3D()</li>
+<li>setMeshUpdateFunction()</li>
+<li>bgMaterial()</li>
+<li>penMaterial()</li>
+<li>setPage()</li>
+<li>insertTemplate()</li>
+<li>resizePadding()</li>
+<li>row()</li>
+<li>column()</li>
+<li>content()</li>
+<li>textElement()</li>
+<li>imageElement()</li>
+<li>videoElement()</li>
+<li>loadGlyphArray()</li>
+<li>unloadGlyphArray()</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">g.js Class Description</a><ul>
+<li><a class="reference internal" href="#api-overview">API Overview</a><ul>
+<li><a class="reference internal" href="#g-global-namespace">G - Global Namespace</a></li>
+<li><a class="reference internal" href="#global-variables">global variables</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="developers.html">Developers Guide</a><ul>
+      <li>Previous: <a href="sketch.html" title="previous chapter">Sketch.js Class Description</a></li>
+      <li>Next: <a href="installation.html" title="next chapter">Installation Guide</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/g.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, NYU Media Research Lab.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="_sources/g.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
