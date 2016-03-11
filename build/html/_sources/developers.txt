@@ -11,6 +11,7 @@ Chalktalk is comprised of a number of Javascript libraries that serve various fu
 .. toctree::
    :maxdepth: 2
 
+   sketches
    utility
    g
    sketch
