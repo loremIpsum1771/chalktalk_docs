@@ -9,9 +9,9 @@ API Overview
 
 
 
-*********************************
-Global Class for Helper Functions
-*********************************
+*******************************************************************
+Global Class for Helper Functions (math functions/graphics related)
+*******************************************************************
 
 * copyFromData()
 * copyWithoutFunctions()

@@ -9,9 +9,9 @@ API Overview
 Global Namespace for Graphics Context
 
 
-********************
-G - Global Namespace
-********************
+******************************
+G - Refers to Chalktalk Object
+******************************
 
 g.js offers helper functions:
 

@@ -102,7 +102,7 @@ The sketch class is an object, with functions:
 * m2s()
 * m2x()
 * m2y()
-* mScale()
+* mScale() //scale a fraction in relation to the sketch
 * moveCursor()
 * moveLine()
 * offsetSelection()
@@ -113,7 +113,7 @@ The sketch class is an object, with functions:
 * pointToPixel()
 * removeLastStroke()
 * renderWrapper()
-* scale()
+* scale() //internal routine that should be hidden to the user
 * outPortIndex()
 * recenter3DSketch()
 * setOutPortValue()
