@@ -21,7 +21,7 @@ Welcome to Chalktalk VR's documentation!
     * How-to guides are recipes. They guide you through the steps involved in addressing key problems and use-cases. They are more advanced than tutorials and assume some knowledge of how the software works.
 
 --------------------------------------
-**User Guide**
+**Get Started**
 --------------------------------------
 
 
